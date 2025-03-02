@@ -1,0 +1,38 @@
+/* Nav bar */
+.topnav {
+    background-color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  /* Links in Nav Bar */
+  .topnav a {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover Effect for Nav Links */
+  .topnav a:hover {
+    background-color: black;  /* Change background to black */
+    color: white;  /* Change text color to white */
+  }
+  
+  /* Logo */
+  .topnav img {
+    height: 30px;
+    width: auto;
+  }
+  
+  /* Spacing Between Nav Links */
+  .topnav a:not(:last-child) {
+    margin-right: 20px;
+  }
