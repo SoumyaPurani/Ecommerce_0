@@ -1,0 +1,82 @@
+.header {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Slides */
+.mySlides {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Active Slide */
+.mySlides.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Outgoing Slide */
+.mySlides.prev-slide {
+  transform: translateX(-100%);
+}
+
+/* Incoming Slide */
+.mySlides.next-slide {
+  transform: translateX(100%);
+}
+
+/* Text */
+.text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  padding: 6px 10px; /* Reduced padding for smaller buttons */
+  color: black;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.prev {
+  left: 5px; /* Reduced gap from the left */
+}
+
+.next {
+  right: 5px; 
+}
+
+/* Hover Effect for Navigation Buttons */
+.prev:hover, .next:hover {
+  color: white;
+  background-color: black;
+}
