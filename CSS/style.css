@@ -1,7 +1,108 @@
-.header {
-  padding: 1px;
-  text-align: center;
-  background: #000000;
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+
+/* Nav bar */
+.topnav {
+  background-color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Links in Nav Bar */
+.topnav a {
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect for Nav Links */
+.topnav a:hover {
+  background-color: black;  /* Change background to black */
+  color: white;  /* Change text color to white */
+}
+
+/* Logo */
+.topnav img {
+  height: 30px;
+  width: auto;
+}
+
+/* Spacing Between Nav Links */
+.topnav a:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Adjust the height of the hero section */
+  background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  font-size: 20px;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.shop-now-btn {
+  position: absolute;
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  top: 70%; /* Adjust to move the button down (you can modify this percentage) */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Perfectly center the button horizontally */
+}
+
+.shop-now-btn:hover {
+  background-color: #ff5a4a;
+  transform: scale(1.1) translateX(-50%);
+}
+
+/* Optional: Adding a slight dark overlay on the image */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
 }
