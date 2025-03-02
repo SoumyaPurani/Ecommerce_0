@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scentify</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
 </head>
 <link rel="stylesheet" href="CSS/style.css">
 <body>
-
-<div id="header-container"></div>
+    <div id="header-container"></div>
 <div id="nav-container"></div>
 
 <div class="hero-section">
@@ -16,7 +17,75 @@
       <a href="#shop" class="shop-now-btn">Shop Now</a>
     </div>
   </div>
-
+  <section class="featured-products" id="featuredproducts">
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="productgrid">
+            <div class="product-item" data-product-id="1" data-product-name="Product 1 Title" data-product-price="XX.XX" data-product-image="img/product1.jpg">
+                <div class="product-image">
+                    <img src="img/product1.jpg" alt="Product 1 Image">
+                </div>
+                <div class="product-title"><h3>Product 1</h3></div>
+                <div class="product-price">$XX.XX</div>
+                <button class="addToCartButton" data-product-id="1">Add to Cart</button>
+            </div>
+            <div class="product-item" data-product-id="2" data-product-name="Product 2 Title" data-product-price="XX.XX" data-product-image="img/product2.jpg">
+                <div class="product-image">
+                    <img src="img/product2.jpg" alt="Product 2 Image">
+                </div>
+                <div class="product-title"><h3>Product 2</h3></div>
+                <div class="product-price">$XX.XX</div>
+                <button class="addToCartButton" data-product-id="2">Add to Cart</button>
+            </div>
+            <div class="product-item" data-product-id="3" data-product-name="Product 3 Title" data-product-price="XX.XX" data-product-image="img/product1.jpg">
+                <div class="product-image">
+                    <img src="img/product3.jpg" alt="Product 3 Image">
+                </div>
+                <div class="product-title"><h3>Product 3</h3></div>
+                <div class="product-price">$XX.XX</div>
+                <button class="addToCartButton" data-product-id="3">Add to Cart</button>
+            </div>
+            <div class="product-item" data-product-id="4" data-product-name="Product 4 Title" data-product-price="XX.XX" data-product-image="img/product1.jpg">
+                <div class="product-image">
+                    <img src="img/product4.jpg" alt="Product 4 Image">
+                </div>
+                <div class="product-title"><h3>Product 4</h3></div>
+                <div class="product-price">$XX.XX</div>
+                <button class="addToCartButton" data-product-id="4">Add to Cart</button>
+            </div>
+            <div class="product-item" data-product-id="5" data-product-name="Product 5 Title" data-product-price="XX.XX" data-product-image="img/product1.jpg">
+                <div class="product-image">
+                    <img src="img/product5.jpg" alt="Product 5 Image">
+                </div>
+                <div class="product-title"><h3>Product 5</h3></div>
+                <div class="product-price">$XX.XX</div>
+                <button class="addToCartButton" data-product-id="5">Add to Cart</button>
+            </div>
+            <div class="product-item" data-product-id="6" data-product-name="Product 6 Title" data-product-price="XX.XX" data-product-image="img/product1.jpg">
+                <div class="product-image">
+                    <img src="img/product6.jpg" alt="Product 6 Image">
+                </div>
+                <div class="product-title"><h3>Product 6</h3></div>
+                <div class="product-price">$XX.XX</div>
+                <button class="addToCartButton" data-product-id="6">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-container">
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <p>Email: scentifyshopwpg@gmail.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; [2025] Scentify. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script type="module" src="JS/db.js"></script>
+<script type="module" src="JS/index.js"></script>
 <script type="module" src="JS/header.js"></script>
 <script type="module" src="JS/navloader.js"></script>
 </body>
